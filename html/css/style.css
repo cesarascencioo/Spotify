@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    margin: 0
+}
+
+.sidebar{
+    width:7vw;
+    background: #121314;
+    height: 100vh;
+}
+
+.content{
+    background: #fff;
+    height:100vh;
+    flex-grow: 1;
+}
+
+.top{
+    height:20vh;
+    background:red;
+}
+
+.cards-first-section{
+    height:30vh;
+    background:blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-second-section{
+    height:35vh;
+    background: purple;
+    display: flex;
+}
+
+.card-third-section{
+    background:green;
+    height:100vh;
+    display: flex;
+}
+
+.card{
+    margin-left:1em;
+    margin-top:1em;
+    height:10em;
+    background: orange;
+    width:10em;
+    margin-right:1em;
+}
