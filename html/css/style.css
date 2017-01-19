@@ -1,49 +1,56 @@
-body{
-    display: flex;
-    margin: 0
+body {
+    margin: 0;
+    background: #000;
 }
 
-.sidebar{
-    width:7vw;
-    background: #121314;
+.sidebar {
+    width: 6.25vw;
+    background: #171819;
     height: 100vh;
-}
-
-.content{
-    background: #fff;
-    height:100vh;
-    flex-grow: 1;
-}
-
-.top{
-    height:20vh;
-    background:red;
-}
-
-.cards-first-section{
-    height:30vh;
-    background:blue;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
-.card-second-section{
-    height:35vh;
-    background: purple;
-    display: flex;
+.sidebar-mainlogo {
+    height: auto;
+    width: 3.4em;
+    margin-top: 1.28em;
 }
 
-.card-third-section{
-    background:green;
-    height:100vh;
-    display: flex;
+.sidebar-search {
+  height: auto;
+  width: 1.8em;
+  margin-top: 2.1em;
 }
 
-.card{
-    margin-left:1em;
-    margin-top:1em;
-    height:10em;
-    background: orange;
-    width:10em;
-    margin-right:1em;
+.sidebar-browse {
+  height: auto;
+  width: 2em;
+  margin-top: .5em;
+}
+
+.sidebar-radio {
+  height: auto;
+  width: 2em;
+  margin-top: .5em;
+}
+
+.sidebar-music {
+  height: auto;
+  width: 1.6em;
+  margin-top: .5em;
+}
+
+.sidebar-follow {
+  height: auto;
+  width: 1.8em;
+  margin-top: .5em;
+}
+
+.icon-title{
+  color:#88898C;
+  font-family: "Helvetica Neue";
+  font-size:0.86em;
+  margin-top:.6em;
 }
