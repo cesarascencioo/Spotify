@@ -1,56 +1,89 @@
 body {
-    margin: 0;
-    background: #000;
+  margin: 0;
+  background: #000;
 }
 
 .sidebar {
-    width: 6.25vw;
-    background: #171819;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 6.25vw;
+  background: #1B1C1F;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  text-align: center;
 }
 
 .sidebar-mainlogo {
-    height: auto;
-    width: 3.4em;
-    margin-top: 1.28em;
+  height: auto;
+  width: 3.4em;
+  margin-top: 1.28em;
 }
 
 .sidebar-search {
   height: auto;
   width: 1.8em;
-  margin-top: 2.1em;
+  margin-top: 2em;
 }
 
 .sidebar-browse {
   height: auto;
   width: 2em;
-  margin-top: .5em;
+  margin-top: .55em;
 }
 
 .sidebar-radio {
   height: auto;
   width: 2em;
-  margin-top: .5em;
+  margin-top: .55em;
 }
 
 .sidebar-music {
   height: auto;
   width: 1.6em;
-  margin-top: .5em;
+  margin-top: .55em;
 }
 
 .sidebar-follow {
   height: auto;
   width: 1.8em;
+  margin-top: .55em;
+}
+
+.icon-title {
+  color: #88898C;
+  font-family: "Helvetica Neue";
+  font-size: 0.82em;
   margin-top: .5em;
 }
 
-.icon-title{
-  color:#88898C;
+.sidebar-user {
+  margin-top: auto;
+}
+
+.profile {
+  height: 2.6em;
+  width: 2.6em;
+  border-radius: 50%;
+  background: url(../images/profile.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.sidebar-settings {
+  height: auto;
+  width: 1.3em;
+  margin-bottom: 1em;
+  margin-top: .2em;
+}
+
+.highlight-text {
+  color: #fff;
   font-family: "Helvetica Neue";
-  font-size:0.86em;
-  margin-top:.6em;
+  font-size: 0.82em;
+  margin-top: .5em;
 }
