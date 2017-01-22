@@ -8,14 +8,19 @@ body {
   background: #1B1C1F;
   height: 100vh;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  margin: 0;
-  padding-left: 0;
-  list-style-type: none;
 }
 
-li {
+.sidebar-top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.sidebar-top li {
   text-align: center;
 }
 
@@ -64,6 +69,11 @@ li {
 
 .sidebar-user {
   margin-top: auto;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
 }
 
 .profile {
@@ -77,13 +87,6 @@ li {
 .sidebar-settings {
   height: auto;
   width: 1.3em;
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
   margin-top: .2em;
-}
-
-.highlight-text {
-  color: #fff;
-  font-family: "Helvetica Neue";
-  font-size: 0.82em;
-  margin-top: .5em;
 }
