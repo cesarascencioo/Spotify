@@ -1,0 +1,250 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    grid-area: header;
+    padding-left: 1.7vw;
+    display: grid;
+}
+
+.wrapper {
+    background-color: #fff;
+    color: #444;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: "header" "sidebar" "content";
+}
+
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        grid-gap: 0px;
+        grid-template-columns: 6.25vw auto;
+        grid-template-areas: "sidebar  header" "sidebar content";
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .wrapper {
+        grid-gap: 0px;
+        grid-template-columns: 100vw;
+        grid-template-areas: "sidebar" "header" "content";
+    }
+}
+
+.header {
+    background-color: #121212;
+}
+
+.browse {
+    font-family: "Helvetica Neue";
+    font-size: 5.5vmin;
+    font-weight: 200;
+    letter-spacing: .2vw;
+    color: #DFE0E6;
+}
+
+
+/*sidebar*/
+
+.sidebar {
+    background: #1D1E20;
+    grid-area: sidebar;
+    display: grid;
+    justify-items: center;
+}
+
+.icon-container {
+    font-family: "Helvetica Neue";
+    font-size: 1.66vmin;
+    font-weight: 400;
+    color: #88898C;
+    display: grid;
+    justify-items: center;
+}
+
+.icon-text {
+    margin-top: -1vw;
+}
+
+@media only screen and (min-width: 600px) {
+    .sidebar {
+        grid-template-rows: 7.5vw 5.2vw 5.2vw 5.2vw 5.2vw 5.2vw 22.8vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sidebar {
+        grid-gap: 0px;
+        grid-template-columns: 7.5vw 5.2vw 5.2vw 5.2vw 5.2vw 5.2vw 22.8vw;
+    }
+}
+
+.site-id {
+    height: 3.8vw;
+    width: 3.8vw;
+    margin-top: 1.4vw;
+}
+
+.navbar-search {
+    height: 2.2vw;
+    width: 2.2vw;
+}
+
+.navbar-browse {
+    height: 2.3vw;
+    width: 2.3vw;
+}
+
+.navbar-radio {
+    height: 1.8vw;
+    width: 2.3vw;
+}
+
+.navbar-music {
+    height: 1.8vw;
+    width: 2vw;
+}
+
+.navbar-follow {
+    height: 2vw;
+    width: 2.3vw;
+}
+
+.navbar-settings {
+    height: 1.35vw;
+    width: 1.35vw;
+}
+
+.profile {
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    background: url(./images/profile.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.sidebar-bottom {
+    display: grid;
+    justify-items: center;
+    align-content: end;
+}
+
+@media only screen and (min-width: 600px) {
+    .sidebar-bottom {
+        grid-gap: 0px;
+        grid-template-rows: 5.5vw 3.5vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sidebar-bottom {
+        grid-gap: 0px;
+        grid-template-columns: 5vw 2.7vw;
+    }
+}
+
+
+/*sidebar*/
+
+
+/*content*/
+
+.content {
+    grid-area: content;
+    display: grid;
+}
+
+@media only screen and (min-width: 600px) {
+    .content {
+        justify-content: center;
+        grid-template-rows: 14vw 12vw 88vw;
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .content {
+        grid-template-rows: 60vw 24vw 370vw;
+        justify-content: center;
+        grid-template-columns: auto;
+    }
+}
+
+.content1 {
+    display: grid;
+}
+
+@media only screen and (min-width: 400px) {
+    .content1 {
+        grid-template-columns: 28vw 28vw 28vw;
+        grid-gap: 4vw;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .content1 {
+        grid-gap: 1.3vw;
+        grid-template-columns: 14vw 14vw 14vw 14vw 14vw 14vw;
+    }
+}
+
+.box {
+    background: url(./images/box.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.content2 {
+    display: grid;
+}
+
+@media only screen and (min-width: 400px) {
+    .content2 {
+        grid-template-columns: 28vw 28vw 28vw;
+        grid-gap: 4vw;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .content2 {
+        justify-content: center;
+        grid-gap: 1.3vw;
+        grid-template-columns: 29.3vw 29.3vw 29.3vw;
+    }
+}
+
+.box2 {
+    background: url(./images/charts.png) center center no-repeat;
+    background-size: cover;
+}
+
+.content3 {
+    display: grid;
+}
+
+@media only screen and (min-width: 400px) {
+    .content3 {
+        grid-template-columns: 28vw 28vw 28vw;
+        grid-gap: 4vw;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .content3 {
+        grid-gap: 1.3vw;
+        grid-template-columns: 14vw 14vw 14vw 14vw 14vw 14vw;
+    }
+}
+
+.box3 {
+    background: url(./images/genres.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/*content*/
